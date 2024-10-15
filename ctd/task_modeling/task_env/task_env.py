@@ -475,7 +475,7 @@ class RandomTarget_CO(Environment):
         pos_weight = kwargs.get("pos_weight", 1.0)
         act_weight = kwargs.get("act_weight", 1.0)
 
-        self.force_mag = kwargs.get("force_mag", 5)
+        self.force_mag = 0.0
 
         self.loss_func = RandomTargetLoss(
             position_loss=nn.MSELoss(), pos_weight=pos_weight, act_weight=act_weight
